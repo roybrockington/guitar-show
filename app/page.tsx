@@ -4,6 +4,7 @@ import guitars from "./assets/guitars.json"
 import merch from "./assets/merch.json"
 import { useState } from "react"
 import Products from "./components/Products"
+import Link from "next/link"
 
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [selectedBrand, setSelectedBrand] = useState<string | null>(null)
 
-    const brands = ["Citadel", "Markbass", "ENGL", "LTD", "ESP"]
+    const brands = ["Citadel", "ENGL", "ESP", "LTD", "Markbass", "Zoom"]
 
     const selectBrand = (brand: string) => {
         setSelectedBrand(selectedBrand === brand ? null : brand)
@@ -55,7 +56,7 @@ export default function Home() {
                                     onClick={() => selectBrand(brand)}
                                     className={`flex justify-center w-full px-3 py-2 rounded cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors ${
                                         selectedBrand === brand
-                                            ? 'border border-black text-white'
+                                            ? 'border border-gray-300 text-white'
                                             : 'text-gray-800 dark:text-gray-200'
                                     }`}
                                 >
@@ -78,7 +79,9 @@ export default function Home() {
                 )}
             </aside>
             <main className="flex flex-col row-start-2 items-center sm:items-start">
-                <span className="mb-2 h-2 border-b-1 border-b-zinc-300 w-full"></span>
+                <div className="w-full flex justify-between items-center mb-4 pb-2 border-b-1 border-b-zinc-300">
+                    <span className="flex-grow"></span>
+                </div>
                 <Products products={filteredGuitars} />
             </main>
         </div>

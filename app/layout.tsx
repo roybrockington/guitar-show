@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Sound Service @ UK Guitar & Drum Show",
-    description: "Guitar show payment transaction app",
+    title: "Sound Service @ UK Guitar & Bass Show",
+    description: "Trade show payment transaction app",
 };
 
 export default function RootLayout({
