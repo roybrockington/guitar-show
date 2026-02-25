@@ -12,14 +12,14 @@ type Product = {
    link: string
 }
 
-const Products = ({products, show}: {products: Product[], show: boolean}) => {
+const Products = ({products}: {products: Product[]}) => {
 
     return (
         <ul className="w-full flex flex-col gap-4">
         {products.map(product =>
             <li 
                 key={product.code} 
-                className={`mb-2 list-none ${show ? 'flex' : 'hidden'} flex-col items-center gap-4 pb-4 border-b-1 border-b-zinc-300 w-full`}
+                className={`mb-2 list-none flex flex-col items-center gap-4 pb-4 border-b-1 border-b-zinc-300 w-full`}
             >
                 <Image
                     src={`https://soundservicelabs.com/api/img/${product.brand}.jpg`}
