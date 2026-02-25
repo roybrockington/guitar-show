@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "ESP @ Bloodstock",
-    description: "Festival guitar shop",
+    title: "Sound Service @ UK Guitar & Drum Show",
+    description: "Guitar show payment transaction app",
 };
 
 export default function RootLayout({
