@@ -4,7 +4,7 @@ import React from 'react'
 const Header = () => {
     return (
         <header
-            className='bg-gradient-to-b from-black via-gray-900 to-gray-800 w-full flex justify-around items-center p-6 sticky top-0 z-50 print:hidden shadow-xl border-b-4 border-[#FF4912]'
+            className='bg-gradient-to-b from-black via-gray-900 to-gray-800 w-full flex justify-around items-center p-4 sticky top-0 z-50 print:hidden shadow-xl border-b-4 border-[#FF4912]'
         >
             <Image
                 src="https://soundservicelabs.com/build/assets/labs-e012a3ff.png"
