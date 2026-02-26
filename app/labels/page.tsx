@@ -63,11 +63,22 @@ const Labels = () => {
             {pages.map((pageProducts, pageIndex) => (
                 <div
                     key={pageIndex}
-                    className={`w-[210mm] h-[297mm] mx-auto bg-white p-[15.5mm_7mm_13mm_4.7mm] ${
+                    className={`w-[210mm] h-[297mm] mx-auto bg-white ${
                         pageIndex < pages.length - 1 ? 'page-break' : ''
                     }`}
+                    style={{
+                        paddingTop: '15.5mm',
+                        paddingRight: '7mm',
+                        paddingBottom: '13mm',
+                        paddingLeft: '4.7mm',
+                    }}
                 >
-                    <div className="grid grid-cols-3 gap-x-[2.5mm] gap-y-0 w-full h-full">
+                    <div
+                        className="grid grid-cols-3 gap-x-[2.5mm] gap-y-0 w-full"
+                        style={{
+                            gridAutoRows: '38.1mm',
+                        }}
+                    >
                         {pageProducts.map((guitar) => (
                             <div
                                 key={guitar.code}
