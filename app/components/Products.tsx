@@ -11,7 +11,6 @@ type Product = {
    brand: string
    street: number
    show: number
-   link: string
 }
 
 const Products = ({products}: {products: Product[]}) => {
